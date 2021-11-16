@@ -16,7 +16,14 @@ window.onload = () => {
 // 2 - This function is called when a user clicks on the button in the HTML. 
 // Can you make the text "hello" log to the console?
 const sayHello = () => {
-  return "Hello!"
+  console.time()
+  console.log("Hello!")
+  console.count()
+  console.timeEnd()
+}
+
+const clearCons = () => {
+  console.clear()
 }
 
 
@@ -35,7 +42,10 @@ const object1 = {
 }
 
 // 3.5 - Can you add statements below to log to the console each of the variables above?
-
+console.log(arr1)
+console.log(num1)
+console.log(name1)
+console.log(object1)
 
 // This variable will hold text values for us
 let inputFieldValue = ""
